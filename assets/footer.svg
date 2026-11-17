@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" role="img" aria-label="Asante for visiting!">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#5b1f6e"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="900" height="120" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="900" height="120" fill="url(#bg)"/>
+    <circle cx="450" cy="120" r="54" fill="#ffd27a" fill-opacity="0.9"/>
+    <path d="M0 100 C 150 86, 300 104, 450 94 S 750 86, 900 100 L900 120 L0 120 Z" fill="#1c0826"/>
+    <g fill="#1c0826" transform="translate(110 64) scale(0.6)"><path d="M24 60 L26 34 L18 26 L21 24 L28 31 L29 20 L32 20 L31 32 L38 25 L41 27 L33 35 L31 60 Z"/><path d="M4 26 C 12 16, 30 15, 38 18 C 46 15, 62 17, 66 25 C 56 30, 42 28, 36 28 C 26 31, 12 31, 4 26 Z"/></g>
+    <g fill="#1c0826" transform="translate(720 70) scale(0.5)"><path d="M24 60 L26 34 L18 26 L21 24 L28 31 L29 20 L32 20 L31 32 L38 25 L41 27 L33 35 L31 60 Z"/><path d="M4 26 C 12 16, 30 15, 38 18 C 46 15, 62 17, 66 25 C 56 30, 42 28, 36 28 C 26 31, 12 31, 4 26 Z"/></g>
+    <text x="450" y="50" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff" text-anchor="middle">Asante for visiting!</text>
+  </g>
+</svg>

@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="title desc">
+  <title id="title">Wanjiku Kamande</title>
+  <desc id="desc">An animated Nairobi sunset: the sun sinks behind the city skyline and acacia trees while birds fly past.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e0b3b"/>
+      <stop offset="0.32" stop-color="#5b1f6e"/>
+      <stop offset="0.58" stop-color="#c2396d"/>
+      <stop offset="0.78" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#ffc07a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#fff4c2"/>
+      <stop offset="0.55" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#ff9a5a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ff7a59" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.6" stop-color="#ffe3b3"/>
+      <stop offset="1" stop-color="#ffc07a"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="400" rx="22"/></clipPath>
+    <style>
+      .twinkle { animation: twinkle 3.2s ease-in-out infinite; }
+      .t2 { animation-delay: 0.8s; } .t3 { animation-delay: 1.6s; } .t4 { animation-delay: 2.4s; }
+      @keyframes twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+
+      .sun { animation: sink 10s ease-in-out infinite alternate; }
+      @keyframes sink { from { transform: translateY(0); } to { transform: translateY(26px); } }
+
+      .glow { animation: breathe 5s ease-in-out infinite; transform-origin: 900px 236px; }
+      @keyframes breathe { 0%, 100% { opacity: 0.55; transform: scale(1); } 50% { opacity: 0.9; transform: scale(1.08); } }
+
+      .bird { animation: fly 16s linear infinite; }
+      .b2 { animation-duration: 21s; animation-delay: -7s; }
+      .b3 { animation-duration: 25s; animation-delay: -15s; }
+      @keyframes fly { from { transform: translateX(-120px); } to { transform: translateX(1320px); } }
+      .wing { animation: flap 0.9s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+      @keyframes flap { from { transform: scaleY(1); } to { transform: scaleY(0.45); } }
+
+      .window { animation: lights 4s steps(1) infinite; }
+      .w2 { animation-delay: 1.3s; } .w3 { animation-delay: 2.6s; }
+      @keyframes lights { 0% { opacity: 0.25; } 30% { opacity: 1; } 75% { opacity: 0.6; } }
+
+      .role { opacity: 0; animation: role 12s ease-in-out infinite; }
+      .r2 { animation-delay: 4s; } .r3 { animation-delay: 8s; }
+      @keyframes role {
+        0% { opacity: 0; transform: translateY(8px); }
+        6%, 28% { opacity: 1; transform: translateY(0); }
+        34%, 100% { opacity: 0; transform: translateY(-8px); }
+      }
+
+      .fadein { animation: fadein 1.4s ease-out both; }
+      @keyframes fadein { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+      text { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+        .r1 { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Sky -->
+    <rect width="1200" height="400" fill="url(#sky)"/>
+
+    <!-- Stars in the purple upper sky -->
+    <g fill="#fff">
+      <circle class="twinkle" cx="520" cy="40" r="1.6"/>
+      <circle class="twinkle t2" cx="610" cy="72" r="1.2"/>
+      <circle class="twinkle t3" cx="700" cy="30" r="1.8"/>
+      <circle class="twinkle t4" cx="790" cy="62" r="1.3"/>
+      <circle class="twinkle t2" cx="900" cy="38" r="1.5"/>
+      <circle class="twinkle" cx="1010" cy="70" r="1.2"/>
+      <circle class="twinkle t3" cx="1100" cy="34" r="1.7"/>
+      <circle class="twinkle t4" cx="1160" cy="92" r="1.1"/>
+      <circle class="twinkle t3" cx="450" cy="96" r="1.1"/>
+      <circle class="twinkle" cx="960" cy="110" r="1"/>
+    </g>
+
+    <!-- Sun and its glow -->
+    <circle class="glow" cx="900" cy="236" r="180" fill="url(#glow)"/>
+    <g class="sun">
+      <circle cx="900" cy="236" r="86" fill="url(#sun)"/>
+    </g>
+
+    <!-- Distant Ngong-style hills -->
+    <path d="M0 318 C 120 292, 210 300, 300 312 S 470 286, 560 300 S 760 290, 860 306 S 1060 288, 1200 304 L1200 400 L0 400 Z" fill="#8c2f6a" opacity="0.55"/>
+
+    <!-- Nairobi skyline -->
+    <g fill="#2a0f36">
+      <rect x="610" y="262" width="34" height="80"/>
+      <rect x="648" y="240" width="26" height="102"/>
+      <rect x="678" y="270" width="40" height="72"/>
+      <!-- KICC: tower, saucer and cap -->
+      <rect x="732" y="196" width="34" height="146"/>
+      <ellipse cx="749" cy="196" rx="44" ry="8"/>
+      <path d="M727 190 L749 170 L771 190 Z"/>
+      <rect x="745" y="160" width="8" height="12"/>
+      <rect x="776" y="226" width="30" height="116"/>
+      <rect x="810" y="250" width="44" height="92"/>
+      <rect x="858" y="214" width="28" height="128"/>
+      <path d="M858 214 L872 196 L886 214 Z"/>
+      <rect x="890" y="258" width="38" height="84"/>
+      <rect x="932" y="236" width="24" height="106"/>
+      <rect x="960" y="268" width="46" height="74"/>
+      <rect x="1010" y="248" width="30" height="94"/>
+      <rect x="1044" y="276" width="52" height="66"/>
+      <rect x="1100" y="258" width="26" height="84"/>
+      <rect x="1130" y="282" width="70" height="60"/>
+    </g>
+    <!-- City lights -->
+    <g fill="#ffd27a">
+      <rect class="window" x="738" y="214" width="5" height="5"/>
+      <rect class="window w2" x="755" y="232" width="5" height="5"/>
+      <rect class="window w3" x="738" y="262" width="5" height="5"/>
+      <rect class="window w2" x="655" y="258" width="4" height="4"/>
+      <rect class="window" x="864" y="236" width="4" height="4"/>
+      <rect class="window w3" x="872" y="270" width="4" height="4"/>
+      <rect class="window w2" x="938" y="256" width="4" height="4"/>
+      <rect class="window" x="1016" y="266" width="4" height="4"/>
+      <rect class="window w3" x="1106" y="276" width="4" height="4"/>
+      <rect class="window w2" x="786" y="246" width="4" height="4"/>
+    </g>
+
+    <!-- Ground -->
+    <path d="M0 352 C 200 336, 380 346, 600 340 S 980 334, 1200 344 L1200 400 L0 400 Z" fill="#1c0826"/>
+
+    <!-- Acacia trees -->
+    <g fill="#1c0826">
+      <path d="M118 352 L124 286 L104 262 L110 260 L127 280 L131 252 L136 252 L134 282 L152 262 L157 266 L138 288 L132 352 Z"/>
+      <path d="M44 262 C 60 238, 120 236, 150 244 C 180 236, 226 240, 236 258 C 210 268, 170 264, 150 262 C 120 270, 70 272, 44 262 Z"/>
+      <path d="M362 352 L366 306 L352 292 L356 290 L368 302 L371 284 L375 284 L374 304 L386 292 L390 295 L377 308 L373 352 Z"/>
+      <path d="M318 294 C 330 278, 370 276, 388 282 C 406 276, 432 280, 438 292 C 420 300, 396 296, 384 296 C 362 302, 334 302, 318 294 Z"/>
+      <path d="M520 350 L523 318 L514 308 L517 306 L525 315 L527 302 L530 302 L529 316 L537 308 L540 310 L531 320 L529 350 Z"/>
+      <path d="M492 310 C 500 300, 526 298, 538 302 C 550 298, 566 301, 570 309 C 558 314, 542 312, 534 312 C 518 316, 502 316, 492 310 Z"/>
+    </g>
+
+    <!-- Birds -->
+    <g fill="none" stroke="#2a0f36" stroke-width="3" stroke-linecap="round">
+      <g class="bird"><path class="wing" d="M0 52 Q 9 43 18 52 Q 27 43 36 52"/></g>
+      <g class="bird b2"><path class="wing" d="M0 74 Q 7 67 14 74 Q 21 67 28 74"/></g>
+      <g class="bird b3"><path class="wing" d="M0 30 Q 6 24 12 30 Q 18 24 24 30"/></g>
+    </g>
+
+    <!-- Text -->
+    <g class="fadein">
+      <text x="70" y="104" font-size="26" fill="#ffd9c2" letter-spacing="1">Habari! I'm</text>
+      <text x="66" y="170" font-size="66" font-weight="800" fill="url(#name)">Wanjiku Kamande</text>
+      <text x="70" y="208" font-size="20" fill="#ffe9dc">Software Engineering student · PLP 1MillionDevs · Nairobi, Kenya</text>
+    </g>
+    <g font-size="22" font-weight="600" fill="#ffffff">
+      <text class="role r1" x="70" y="250">🌅 Building backends with Python &amp; FastAPI</text>
+      <text class="role r2" x="70" y="250">🌍 Making tech that speaks Kiswahili &amp; Sheng</text>
+      <text class="role r3" x="70" y="250">☁️ Learning cloud, system design &amp; fair AI</text>
+    </g>
+  </g>
+</svg>
