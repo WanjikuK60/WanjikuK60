@@ -6,9 +6,8 @@
   <img src="assets/divider-about.svg" alt="About me" width="100%"/>
 </p>
 
-- 🎓 Software Engineering student in the **Power Learn Project (PLP) 1MillionDevs** programme
-- 💼 Background in Commerce (**BCom**, Catholic University of Eastern Africa), so I care about who uses what I build and why
-- 🌍 Based in **Nairobi, Kenya**. I speak English, Kiswahili and Sheng, and I like building tech that does too
+- 🎓 Software Engineering Student in the **Power Learn Project (PLP) 1MillionDevs** programme
+- 🌍 Based in **Nairobi, Kenya**. I speak English and Kiswahili
 - 🌱 Currently learning **Azure (AZ-900)**, **system design** and **fair, human-centred AI**
 - 📫 Say hello: **kamandewanjiku60@gmail.com**
 
