@@ -271,7 +271,7 @@ def about_card():
   </g>
 </svg>
 '''
-    (ASSETS / "about.svg").write_text(svg, encoding="utf-8")
+    (ASSETS / "about-me.svg").write_text(svg, encoding="utf-8")
 
 
 def footer():
