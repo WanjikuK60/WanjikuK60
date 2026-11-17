@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="assets/banner-sunset.svg" alt="Hello! I am Wanjiku Kamande, an aspiring Software Engineer based in Nairobi, Kenya. Dreaming big. Coding bold." width="100%"/>
+  <img src="assets/banner-sunset.svg?v=glitter" alt="Hello! I am Wanjiku Kamande, an aspiring Software Engineer based in Nairobi, Kenya. Dreaming big. Coding bold." width="100%"/>
 </p>
 
 <p align="center">
-  <img src="assets/divider-about.svg" alt="About me" width="100%"/>
+  <img src="assets/divider-about.svg?v=glitter" alt="About me" width="100%"/>
 </p>
 
 <p align="center">
-  <img src="assets/about-me.svg" alt="About me, written as a Python class: a girl in the Tech World and a Software Engineer in the making; home Nairobi, Kenya; speaks English and Kiswahili; codes in Python, JavaScript and TypeScript; learning Azure, system design and fair AI in the PLP 1MillionDevs programme; mission: build tech that works for Africa. Fun facts: my study buddy explains the cloud in Kiswahili and Sheng; I turned my portfolio into a haunted mansion for a hackathon; I taught a loan model to follow harvest seasons, not payslips; I shipped a working webhook on Day 1 of an industry sprint" width="100%"/>
+  <img src="assets/about-me.svg?v=glitter" alt="About me, written as a Python class: a girl in the Tech World and a Software Engineer in the making; home Nairobi, Kenya; speaks English and Kiswahili; codes in Python, JavaScript and TypeScript; learning Azure, system design and fair AI in the PLP 1MillionDevs programme; mission: build tech that works for Africa. Fun facts: my study buddy explains the cloud in Kiswahili and Sheng; I turned my portfolio into a haunted mansion for a hackathon; I taught a loan model to follow harvest seasons, not payslips; I shipped a working webhook on Day 1 of an industry sprint" width="100%"/>
 </p>
 
 <p align="center">
@@ -16,30 +16,30 @@
 </p>
 
 <p align="center">
-  <img src="assets/divider-projects.svg" alt="Projects" width="100%"/>
+  <img src="assets/divider-projects.svg?v=glitter" alt="Projects" width="100%"/>
 </p>
 
 <p align="center">
-  <a href="https://wanjikuk60.github.io/AZ-900-Study-Buddy/"><img src="assets/projects/az900.svg" alt="AZ-900 Study Buddy: live site" width="49%"/></a>
-  <a href="https://wanjikuk60.github.io/savannah-loan-system/"><img src="assets/projects/savannah.svg" alt="Savannah Loan System: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/AZ-900-Study-Buddy/"><img src="assets/projects/az900.svg?v=glitter" alt="AZ-900 Study Buddy: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/savannah-loan-system/"><img src="assets/projects/savannah.svg?v=glitter" alt="Savannah Loan System: live site" width="49%"/></a>
 </p>
 <p align="center">
-  <a href="https://wanjikuk60.github.io/Kiroween/"><img src="assets/projects/kiroween.svg" alt="The Haunted Portfolio: live site" width="49%"/></a>
-  <a href="https://wanjikuk60.github.io/northstar-day1-webhook/"><img src="assets/projects/northstar.svg" alt="NorthStar Webhook: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/Kiroween/"><img src="assets/projects/kiroween.svg?v=glitter" alt="The Haunted Portfolio: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/northstar-day1-webhook/"><img src="assets/projects/northstar.svg?v=glitter" alt="NorthStar Webhook: live site" width="49%"/></a>
 </p>
 <p align="center">
-  <a href="https://wanjikuk60.github.io/quicknotes-system-design/"><img src="assets/projects/system-design.svg" alt="QuickNotes System Design: live site" width="49%"/></a>
-  <a href="https://wanjikuk60.github.io/Solstice-Kiosk/"><img src="assets/projects/solstice.svg" alt="Solstice Kiosk: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/quicknotes-system-design/"><img src="assets/projects/system-design.svg?v=glitter" alt="QuickNotes System Design: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/Solstice-Kiosk/"><img src="assets/projects/solstice.svg?v=glitter" alt="Solstice Kiosk: live site" width="49%"/></a>
 </p>
 <p align="center">
-  <a href="https://wanjikuk60.github.io/quicknotes-app/"><img src="assets/projects/quicknotes.svg" alt="QuickNotes: live site" width="49%"/></a>
-  <a href="https://wanjikuk60.github.io/Chat-Cartographer/"><img src="assets/projects/chat-cartographer.svg" alt="Chat Cartographer: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/quicknotes-app/"><img src="assets/projects/quicknotes.svg?v=glitter" alt="QuickNotes: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/Chat-Cartographer/"><img src="assets/projects/chat-cartographer.svg?v=glitter" alt="Chat Cartographer: live site" width="49%"/></a>
 </p>
 
 <p align="center"><sub>Click a card to open its live site · Source code: <a href="https://github.com/WanjikuK60/AZ-900-Study-Buddy">AZ-900 Study Buddy</a> · <a href="https://github.com/WanjikuK60/savannah-loan-system">Savannah Loan System</a> · <a href="https://github.com/WanjikuK60/Kiroween">The Haunted Portfolio</a> · <a href="https://github.com/WanjikuK60/northstar-day1-webhook">NorthStar Webhook</a> · <a href="https://github.com/WanjikuK60/quicknotes-system-design">QuickNotes System Design</a> · <a href="https://github.com/WanjikuK60/Solstice-Kiosk">Solstice Kiosk</a> · <a href="https://github.com/WanjikuK60/quicknotes-app">QuickNotes</a> · <a href="https://github.com/WanjikuK60/Chat-Cartographer">Chat Cartographer</a></sub></p>
 
 <p align="center">
-  <img src="assets/divider-stack.svg" alt="Tech stack" width="100%"/>
+  <img src="assets/divider-stack.svg?v=glitter" alt="Tech stack" width="100%"/>
 </p>
 
 <p align="center">
@@ -66,7 +66,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/divider-stats.svg" alt="GitHub activity" width="100%"/>
+  <img src="assets/divider-stats.svg?v=glitter" alt="GitHub activity" width="100%"/>
 </p>
 
 <p align="center">
@@ -94,5 +94,5 @@
 </p>
 
 <p align="center">
-  <img src="assets/footer.svg" alt="Asante for visiting!" width="100%"/>
+  <img src="assets/footer.svg?v=glitter" alt="Asante for visiting!" width="100%"/>
 </p>

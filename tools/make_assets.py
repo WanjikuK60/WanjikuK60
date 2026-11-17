@@ -67,6 +67,24 @@ ACACIA = (
 )
 
 
+
+import random as _random
+GLITTER_COLORS = ["#ffd27a", "#ff8fb8", "#7fe0ff", "#ffffff", "#c8a6ff", "#7fe0a0", "#ffb27a"]
+SPARK = '<filter id="glowf" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><path id="spark" d="M0 -10 C 1 -3, 3 -1, 10 0 C 3 1, 1 3, 0 10 C -1 3, -3 1, -10 0 C -3 -1, -1 -3, 0 -10 Z"/>'
+GLITTER_CSS = (
+    ".sp {{ transform-box: fill-box; transform-origin: center; animation: sparkle 2.8s ease-in-out infinite; }}"
+    "@keyframes sparkle {{ 0%, 100% {{ transform: scale(0) rotate(0deg); opacity: 0; }} 45% {{ transform: scale(1) rotate(45deg); opacity: 1; }} 60% {{ transform: scale(.75) rotate(90deg); opacity: .9; }} }}"
+)
+
+
+def glitter(points, seed, size=(0.8, 1.7)):
+    rng = _random.Random(seed)
+    return '<g filter="url(#glowf)">' + "".join(
+        f'<g transform="translate({x} {y}) scale({rng.uniform(*size):.2f})"><use class="sp" href="#spark" fill="{rng.choice(GLITTER_COLORS)}" style="animation-delay:-{rng.uniform(0, 2.8):.2f}s"/></g>'
+        for x, y in points
+    ) + "</g>"
+
+
 def text_width(text: str, size: float) -> float:
     """Rough width of a sans-serif string, good enough for chip sizing."""
     return len(text) * size * 0.56
@@ -104,12 +122,14 @@ def project_card(key, title, desc, tags, colors):
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="c"><rect width="440" height="224" rx="18"/></clipPath>
+    {SPARK}
     <style>
       .sweep {{ animation: sweep 6s ease-in-out infinite; }}
       @keyframes sweep {{ 0%, 55% {{ transform: translateX(-260px) skewX(-20deg); }} 85%, 100% {{ transform: translateX(560px) skewX(-20deg); }} }}
       .float {{ animation: float 4s ease-in-out infinite alternate; }}
       @keyframes float {{ from {{ transform: translateY(0); }} to {{ transform: translateY(-6px); }} }}
       .dot {{ animation: pulse 1.6s ease-in-out infinite; }}
+      {GLITTER_CSS.format()}
       @keyframes pulse {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: .3; }} }}
       @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
     </style>
@@ -126,6 +146,7 @@ def project_card(key, title, desc, tags, colors):
     <text x="28" y="56" font-size="24" font-weight="800" fill="#ffffff">{escape(title)}</text>
     {desc_svg}
     {chip_svg}
+    {glitter([(334, 30), (424, 66), (318, 150), (420, 176)], seed=len(key), size=(0.6, 1.2))}
     <rect class="sweep" x="0" y="-20" width="120" height="270" fill="url(#sweep)"/>
   </g>
 </svg>
@@ -155,8 +176,10 @@ def divider(name, label):
       <stop offset="0" stop-color="#ffd27a"/>
       <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
     </radialGradient>
+    {SPARK}
     <style>
       .bob {{ animation: bob 3s ease-in-out infinite alternate; }}
+      {GLITTER_CSS.format()}
       @keyframes bob {{ from {{ transform: translateY(0); }} to {{ transform: translateY(-4px); }} }}
       @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
     </style>
@@ -164,6 +187,7 @@ def divider(name, label):
   <path d="M0 56 C 150 42, 300 66, 450 52 S 750 42, 900 56" fill="none" stroke="url(#line)" stroke-width="3"/>
   <g class="bob"><circle cx="450" cy="52" r="18" fill="url(#sun)"/><circle cx="450" cy="52" r="8" fill="#ffc07a"/></g>
   <text x="450" y="30" font-family="{FONT}" font-size="26" font-weight="900" fill="url(#txt)" text-anchor="middle" letter-spacing="1">{escape(label)}</text>
+  {glitter([(450 - 12 * len(label) - 22, 14), (450 + 12 * len(label) + 22, 20), (450 - 12 * len(label) - 46, 32), (450 + 12 * len(label) + 48, 8), (230, 44), (680, 46), (90, 54), (820, 50)], seed=len(label), size=(0.7, 1.4))}
 </svg>
 '''
     (ASSETS / f"{name}.svg").write_text(svg, encoding="utf-8")
@@ -239,11 +263,13 @@ def about_card():
       <stop offset="1" stop-color="#ff7a59"/>
     </linearGradient>
     <clipPath id="c"><rect width="{width}" height="{height}" rx="22"/></clipPath>
+    {SPARK}
     <style>
       .line {{ opacity: 0; animation: typein .5s steps(12, end) forwards; }}
       @keyframes typein {{ from {{ opacity: 0; clip-path: inset(0 100% 0 0); }} to {{ opacity: 1; clip-path: inset(0 0 0 0); }} }}
       .cursor {{ animation: blink .9s steps(1) infinite; }}
       @keyframes blink {{ 50% {{ opacity: 0; }} }}
+      {GLITTER_CSS.format()}
       .note {{ transform: rotate(var(--tilt)); animation: wobble 4s ease-in-out infinite alternate; }}
       .n1 {{ animation-delay: -1s; }} .n2 {{ animation-delay: -2s; }} .n3 {{ animation-delay: -3s; }}
       @keyframes wobble {{ from {{ transform: rotate(var(--tilt)) translateY(0); }} to {{ transform: rotate(calc(var(--tilt) * -1)) translateY(-4px); }} }}
@@ -267,6 +293,7 @@ def about_card():
 
     <!-- Fun facts -->
     <text x="728" y="46" font-size="20" font-weight="900" fill="#ffd27a" text-anchor="middle" letter-spacing="1">✨ Fun facts ✨</text>
+    {glitter([(590, 22), (872, 24), (612, 52), (850, 56), (885, 440), (575, 436)], seed=5, size=(0.6, 1.3))}
     {"".join(notes)}
   </g>
 </svg>
@@ -282,6 +309,8 @@ def footer():
       <stop offset="1" stop-color="#5b1f6e"/>
     </linearGradient>
     <clipPath id="c"><rect width="900" height="120" rx="20"/></clipPath>
+    {SPARK}
+    <style>{GLITTER_CSS.format()}</style>
   </defs>
   <g clip-path="url(#c)">
     <rect width="900" height="120" fill="url(#bg)"/>
@@ -290,6 +319,7 @@ def footer():
     <g fill="#1c0826" transform="translate(110 64) scale(0.6)">{ACACIA}</g>
     <g fill="#1c0826" transform="translate(720 70) scale(0.5)">{ACACIA}</g>
     <text x="450" y="50" font-family="{FONT}" font-size="26" font-weight="800" fill="#ffffff" text-anchor="middle">Asante for visiting!</text>
+    {glitter([(260, 34), (640, 30), (220, 62), (690, 64), (330, 18), (580, 16), (60, 24), (850, 30), (400, 80), (500, 76)], seed=11)}
   </g>
 </svg>
 '''

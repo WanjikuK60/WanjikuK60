@@ -10,11 +10,13 @@
       <stop offset="1" stop-color="#ff7a59"/>
     </linearGradient>
     <clipPath id="c"><rect width="900" height="452" rx="22"/></clipPath>
+    <filter id="glowf" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><path id="spark" d="M0 -10 C 1 -3, 3 -1, 10 0 C 3 1, 1 3, 0 10 C -1 3, -3 1, -10 0 C -3 -1, -1 -3, 0 -10 Z"/>
     <style>
       .line { opacity: 0; animation: typein .5s steps(12, end) forwards; }
       @keyframes typein { from { opacity: 0; clip-path: inset(0 100% 0 0); } to { opacity: 1; clip-path: inset(0 0 0 0); } }
       .cursor { animation: blink .9s steps(1) infinite; }
       @keyframes blink { 50% { opacity: 0; } }
+      .sp { transform-box: fill-box; transform-origin: center; animation: sparkle 2.8s ease-in-out infinite; }@keyframes sparkle { 0%, 100% { transform: scale(0) rotate(0deg); opacity: 0; } 45% { transform: scale(1) rotate(45deg); opacity: 1; } 60% { transform: scale(.75) rotate(90deg); opacity: .9; } }
       .note { transform: rotate(var(--tilt)); animation: wobble 4s ease-in-out infinite alternate; }
       .n1 { animation-delay: -1s; } .n2 { animation-delay: -2s; } .n3 { animation-delay: -3s; }
       @keyframes wobble { from { transform: rotate(var(--tilt)) translateY(0); } to { transform: rotate(calc(var(--tilt) * -1)) translateY(-4px); } }
@@ -38,6 +40,7 @@
 
     <!-- Fun facts -->
     <text x="728" y="46" font-size="20" font-weight="900" fill="#ffd27a" text-anchor="middle" letter-spacing="1">✨ Fun facts ✨</text>
+    <g filter="url(#glowf)"><g transform="translate(590 22) scale(1.04)"><use class="sp" href="#spark" fill="#7fe0a0" style="animation-delay:-1.00s"/></g><g transform="translate(872 24) scale(1.08)"><use class="sp" href="#spark" fill="#ffb27a" style="animation-delay:-2.07s"/></g><g transform="translate(612 52) scale(1.25)"><use class="sp" href="#spark" fill="#ffd27a" style="animation-delay:-2.35s"/></g><g transform="translate(850 56) scale(1.14)"><use class="sp" href="#spark" fill="#ff8fb8" style="animation-delay:-1.82s"/></g><g transform="translate(885 440) scale(1.23)"><use class="sp" href="#spark" fill="#ffd27a" style="animation-delay:-1.04s"/></g><g transform="translate(575 436) scale(1.21)"><use class="sp" href="#spark" fill="#ffffff" style="animation-delay:-1.52s"/></g></g>
     <g class="note n0" style="transform-origin: 728px 110px; --tilt: -2deg">
       <rect x="580" y="70" width="296" height="80" rx="12" fill="#ffd27a"/>
       <rect x="700" y="64" width="56" height="14" rx="3" fill="#ffffff" fill-opacity="0.55"/>
