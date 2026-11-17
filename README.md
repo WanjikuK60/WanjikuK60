@@ -72,8 +72,8 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=WanjikuK60&show_icons=true&include_all_commits=true&count_private=true&bg_color=30,1e0b3b,c2396d&title_color=ffd27a&text_color=ffffff&icon_color=ffc07a&ring_color=ff7a59&hide_border=true" alt="Wanjiku's GitHub stats" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WanjikuK60&layout=compact&langs_count=6&bg_color=30,1e0b3b,c2396d&title_color=ffd27a&text_color=ffffff&icon_color=ffc07a&ring_color=ff7a59&hide_border=true" alt="Most used languages" height="170"/>
+  <img src="https://raw.githubusercontent.com/WanjikuK60/WanjikuK60/output/stats.svg" alt="My GitHub activity" width="49%"/>
+  <img src="https://raw.githubusercontent.com/WanjikuK60/WanjikuK60/output/languages.svg" alt="Most used languages" width="49%"/>
 </p>
 
 <p align="center">
