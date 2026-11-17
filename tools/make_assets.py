@@ -170,55 +170,104 @@ def divider(name, label):
 
 
 
-ABOUT = [
-    ("Learning", ["Software Engineering student", "at Power Learn Project", "1MillionDevs"], "#c2396d", "cap"),
-    ("Home", ["Nairobi, Kenya", "I speak English", "and Kiswahili"], "#ff7a59", "pin"),
-    ("Growing in", ["Azure (AZ-900),", "system design and", "fair, human-centred AI"], "#8c2f6a", "leaf"),
+MONO = "'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace"
+
+# (text, colour) spans per line of the About-me "code window"
+K, N, S, P, D, F = "#ff8fb8", "#ffd27a", "#ffc07a", "#efe3ff", "#c9a8dc", "#7fe0c4"
+CODE = [
+    [("class ", K), ("Wanjiku", N), ("(", P), ("SoftwareEngineer", F), ("):", P)],
+    [('    """A girl in the Tech World.', D)],
+    [('    A Software Engineer in the making."""', D)],
+    [],
+    [("    home ", P), ("= ", K), ('"Nairobi, Kenya"', S)],
+    [("    speaks ", P), ("= ", K), ("[", P), ('"English"', S), (", ", P), ('"Kiswahili"', S), ("]", P)],
+    [("    codes_in ", P), ("= ", K), ("[", P), ('"Python"', S), (", ", P), ('"JavaScript"', S), (", ", P), ('"TypeScript"', S), ("]", P)],
+    [("    learning ", P), ("= ", K), ("[", P), ('"Azure"', S), (", ", P), ('"System design"', S), (", ", P), ('"Fair AI"', S), ("]", P)],
+    [("    programme ", P), ("= ", K), ('"PLP 1MillionDevs"', S)],
+    [],
+    [("    def ", K), ("mission", F), ("(self):", P)],
+    [("        return ", K), ('"Build tech that works for Africa"', S)],
+    [],
+    [("# Karibu! Let's build something together", D)],
 ]
-ICONS = {
-    "cap": '<path d="M0 -10 L22 0 L0 10 L-22 0 Z" fill="#fff"/><path d="M-12 5 v8 q12 8 24 0 v-8" fill="#fff" fill-opacity="0.85"/><path d="M18 2 v12" stroke="#ffd27a" stroke-width="3"/>',
-    "pin": '<path d="M0 18 c0 0 -16 -14 -16 -26 a16 16 0 0 1 32 0 c0 12 -16 26 -16 26 z" fill="#fff"/><circle cx="0" cy="-8" r="6" fill="#ffd27a"/>',
-    "leaf": '<path d="M0 18 v-16" stroke="#fff" stroke-width="3"/><path d="M0 4 c-18 0 -20 -16 -20 -20 c14 0 20 8 20 20 z" fill="#fff"/><path d="M0 0 c14 0 18 -12 18 -16 c-12 0 -18 6 -18 16 z" fill="#ffd27a"/>',
-}
+
+FACTS = [
+    ("🦒", "My study buddy explains", "the cloud in Kiswahili", "and Sheng", "#ffd27a"),
+    ("👻", "I turned my portfolio", "into a haunted mansion", "for a hackathon", "#ff9ac1"),
+    ("🌽", "I taught a loan model", "to follow harvest seasons,", "not payslips", "#ffb27a"),
+    ("⚡", "I shipped a working", "webhook on Day 1", "of an industry sprint", "#c8a6ff"),
+]
 
 
 def about_card():
-    width, height = 900, 236
-    tiles = []
-    for i, (label, lines, color, icon) in enumerate(ABOUT):
-        x, y = 24 + i * 288, 24
-        text = "".join(
-            f'<text x="{x + 138}" y="{y + 128 + j * 24}" font-size="16" fill="#ffffff" text-anchor="middle"'
-            f'{" font-weight=\"700\"" if j == len(lines) - 1 else ""}>{escape(line)}</text>'
-            for j, line in enumerate(lines)
+    width, height = 900, 452
+    code_lines = []
+    for i, spans in enumerate(CODE):
+        y = 90 + i * 24.5
+        tspans = "".join(f'<tspan fill="{color}">{escape(text)}</tspan>' for text, color in spans)
+        code_lines.append(
+            f'<text class="line" style="animation-delay: {0.35 + i * 0.22:.2f}s" x="58" y="{y}" xml:space="preserve">{tspans}</text>'
+            f'<text x="34" y="{y}" fill="#7d5a92" font-size="13" text-anchor="end">{i + 1}</text>'
         )
-        tiles.append(f'''<g class="tile" style="animation-delay: {0.18 * i:.2f}s">
-      <rect x="{x}" y="{y}" width="276" height="188" rx="18" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/>
-      <circle cx="{x + 138}" cy="{y + 50}" r="30" fill="{color}"/>
-      <g transform="translate({x + 138} {y + 52}) scale(0.85)">{ICONS[icon]}</g>
-      <text x="{x + 138}" y="{y + 102}" font-size="13" font-weight="800" fill="#ffd27a" letter-spacing="2" text-anchor="middle">{escape(label.upper())}</text>
-      {text}
+    cursor_y = 90 + (len(CODE) - 1) * 24.5
+    cursor_x = 58 + len("".join(text for text, _ in CODE[-1])) * 8.7 + 4
+    notes = []
+    for i, (emoji, l1, l2, l3, color) in enumerate(FACTS):
+        y = 70 + i * 92
+        tilt = (-2, 1.6, -1.2, 2)[i]
+        notes.append(f'''<g class="note n{i}" style="transform-origin: 728px {y + 40}px; --tilt: {tilt}deg">
+      <rect x="580" y="{y}" width="296" height="80" rx="12" fill="{color}"/>
+      <rect x="700" y="{y - 6}" width="56" height="14" rx="3" fill="#ffffff" fill-opacity="0.55"/>
+      <text x="604" y="{y + 50}" font-size="30">{emoji}</text>
+      <text x="650" y="{y + 26}" font-size="14.5" font-weight="600" fill="#2a0f36">{escape(l1)}</text>
+      <text x="650" y="{y + 46}" font-size="14.5" font-weight="600" fill="#2a0f36">{escape(l2)}</text>
+      <text x="650" y="{y + 66}" font-size="14.5" font-weight="800" fill="#2a0f36">{escape(l3)}</text>
     </g>''')
-    summary = " ".join(f"{label}: {' '.join(lines)}." for label, lines, _, _ in ABOUT)
+    summary = ("A girl in the Tech World. A Software Engineer in the making. Home: Nairobi, Kenya. "
+               "Speaks English and Kiswahili. Codes in Python, JavaScript and TypeScript. Learning Azure, "
+               "system design and fair AI, in the PLP 1MillionDevs programme. Mission: build tech that works for Africa. "
+               "Fun facts: " + " ".join(f"{a} {b} {c}." for _, a, b, c, _ in FACTS))
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}" role="img" aria-label="About me. {escape(summary)}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1e0b3b"/>
       <stop offset="0.55" stop-color="#4a1860"/>
-      <stop offset="1" stop-color="#9a2f68"/>
+      <stop offset="1" stop-color="#b13468"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c2396d"/>
+      <stop offset="1" stop-color="#ff7a59"/>
     </linearGradient>
     <clipPath id="c"><rect width="{width}" height="{height}" rx="22"/></clipPath>
     <style>
-      .tile {{ animation: pop .9s cubic-bezier(.2,.8,.2,1) both; }}
-      @keyframes pop {{ from {{ opacity: 0; transform: translateY(14px); }} to {{ opacity: 1; transform: translateY(0); }} }}
-      @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
+      .line {{ opacity: 0; animation: typein .5s steps(12, end) forwards; }}
+      @keyframes typein {{ from {{ opacity: 0; clip-path: inset(0 100% 0 0); }} to {{ opacity: 1; clip-path: inset(0 0 0 0); }} }}
+      .cursor {{ animation: blink .9s steps(1) infinite; }}
+      @keyframes blink {{ 50% {{ opacity: 0; }} }}
+      .note {{ transform: rotate(var(--tilt)); animation: wobble 4s ease-in-out infinite alternate; }}
+      .n1 {{ animation-delay: -1s; }} .n2 {{ animation-delay: -2s; }} .n3 {{ animation-delay: -3s; }}
+      @keyframes wobble {{ from {{ transform: rotate(var(--tilt)) translateY(0); }} to {{ transform: rotate(calc(var(--tilt) * -1)) translateY(-4px); }} }}
+      @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} .line {{ opacity: 1; }} }}
     </style>
   </defs>
   <g clip-path="url(#c)" font-family="{FONT}">
     <rect width="{width}" height="{height}" fill="url(#bg)"/>
-    <circle cx="{width - 40}" cy="30" r="130" fill="#ff7a59" fill-opacity="0.16"/>
-    <circle cx="40" cy="{height}" r="110" fill="#c2396d" fill-opacity="0.2"/>
-    {"".join(tiles)}
+    <circle cx="{width - 30}" cy="20" r="140" fill="#ff7a59" fill-opacity="0.14"/>
+    <circle cx="20" cy="{height}" r="120" fill="#c2396d" fill-opacity="0.18"/>
+
+    <!-- Code window -->
+    <rect x="18" y="20" width="540" height="{height - 40}" rx="16" fill="#140724" fill-opacity="0.92" stroke="#ffffff" stroke-opacity="0.12"/>
+    <path d="M18 36 a16 16 0 0 1 16 -16 h508 a16 16 0 0 1 16 16 v18 h-540 z" fill="url(#bar)"/>
+    <circle cx="40" cy="38" r="6" fill="#ff5f57"/><circle cx="60" cy="38" r="6" fill="#febc2e"/><circle cx="80" cy="38" r="6" fill="#28c840"/>
+    <text x="288" y="43" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">about_me.py</text>
+    <g font-family="{MONO}" font-size="14.5">
+      {"".join(code_lines)}
+    </g>
+    <rect class="cursor" x="{cursor_x:.0f}" y="{cursor_y - 15}" width="9" height="19" fill="#ffd27a"/>
+
+    <!-- Fun facts -->
+    <text x="728" y="46" font-size="20" font-weight="900" fill="#ffd27a" text-anchor="middle" letter-spacing="1">✨ Fun facts ✨</text>
+    {"".join(notes)}
   </g>
 </svg>
 '''

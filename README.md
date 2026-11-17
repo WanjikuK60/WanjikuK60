@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/about.svg" alt="About me: Software Engineering student at Power Learn Project 1MillionDevs; based in Nairobi, Kenya and speaks English and Kiswahili; growing in Azure (AZ-900), system design and fair, human-centred AI" width="100%"/>
+  <img src="assets/about.svg" alt="About me, written as a Python class: a girl in the Tech World and a Software Engineer in the making; home Nairobi, Kenya; speaks English and Kiswahili; codes in Python, JavaScript and TypeScript; learning Azure, system design and fair AI in the PLP 1MillionDevs programme; mission: build tech that works for Africa. Fun facts: my study buddy explains the cloud in Kiswahili and Sheng; I turned my portfolio into a haunted mansion for a hackathon; I taught a loan model to follow harvest seasons, not payslips; I shipped a working webhook on Day 1 of an industry sprint" width="100%"/>
 </p>
 
 <p align="center">
