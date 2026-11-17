@@ -1,69 +1,68 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Wanjiku Kamande: Software Engineering student in Nairobi, Kenya" width="100%"/>
+  <img src="assets/banner.svg" alt="Habari! I'm Wanjiku Kamande, a Software Engineering student in Nairobi, Kenya, building tech for Africa" width="100%"/>
 </p>
 
 <p align="center">
   <img src="assets/divider-about.svg" alt="About me" width="100%"/>
 </p>
 
-- 🎓 Software Engineering Student in the **Power Learn Project (PLP) 1MillionDevs** programme
-- 🌍 Based in **Nairobi, Kenya**. I speak English and Kiswahili
-- 🌱 Currently learning **Azure (AZ-900)**, **system design** and **fair, human-centred AI**
-- 📫 Say hello: **kamandewanjiku60@gmail.com**
+<p align="center">
+  <img src="assets/about.svg" alt="About me: Software Engineering student at Power Learn Project 1MillionDevs; based in Nairobi, Kenya and speaks English and Kiswahili; growing in Azure (AZ-900), system design and fair, human-centred AI" width="100%"/>
+</p>
+
+<p align="center">
+  <a href="mailto:kamandewanjiku60@gmail.com"><img src="https://img.shields.io/badge/Say_hello-kamandewanjiku60%40gmail.com-c2396d?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Wanjiku"/></a>
+  <a href="https://wanjikuk60.github.io/Kiroween/"><img src="https://img.shields.io/badge/Portfolio-The_Haunted_Portfolio-5b1f6e?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"/></a>
+</p>
 
 <p align="center">
   <img src="assets/divider-projects.svg" alt="Projects" width="100%"/>
 </p>
 
-<table>
-<tr>
-<td width="50%" align="center">
-<a href="https://wanjikuk60.github.io/AZ-900-Study-Buddy/"><img src="assets/projects/az900.svg" alt="AZ-900 Study Buddy" width="100%"/></a><br/>
-<sub><a href="https://wanjikuk60.github.io/AZ-900-Study-Buddy/"><b>Live site</b></a> · <a href="https://github.com/WanjikuK60/AZ-900-Study-Buddy">Code</a></sub>
-</td>
-<td width="50%" align="center">
-<a href="https://wanjikuk60.github.io/savannah-loan-system/"><img src="assets/projects/savannah.svg" alt="Savannah Loan System" width="100%"/></a><br/>
-<sub><a href="https://wanjikuk60.github.io/savannah-loan-system/"><b>Live site</b></a> · <a href="https://github.com/WanjikuK60/savannah-loan-system">Code</a></sub>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center">
-<a href="https://wanjikuk60.github.io/Kiroween/"><img src="assets/projects/kiroween.svg" alt="The Haunted Portfolio" width="100%"/></a><br/>
-<sub><a href="https://wanjikuk60.github.io/Kiroween/"><b>Live site</b></a> · <a href="https://github.com/WanjikuK60/Kiroween">Code</a></sub>
-</td>
-<td width="50%" align="center">
-<a href="https://wanjikuk60.github.io/northstar-day1-webhook/"><img src="assets/projects/northstar.svg" alt="NorthStar Webhook" width="100%"/></a><br/>
-<sub><a href="https://wanjikuk60.github.io/northstar-day1-webhook/"><b>Live site</b></a> · <a href="https://github.com/WanjikuK60/northstar-day1-webhook">Code</a></sub>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center">
-<a href="https://wanjikuk60.github.io/quicknotes-system-design/"><img src="assets/projects/system-design.svg" alt="QuickNotes System Design" width="100%"/></a><br/>
-<sub><a href="https://wanjikuk60.github.io/quicknotes-system-design/"><b>Live site</b></a> · <a href="https://github.com/WanjikuK60/quicknotes-system-design">Code</a></sub>
-</td>
-<td width="50%" align="center">
-<a href="https://wanjikuk60.github.io/Solstice-Kiosk/"><img src="assets/projects/solstice.svg" alt="Solstice Kiosk" width="100%"/></a><br/>
-<sub><a href="https://wanjikuk60.github.io/Solstice-Kiosk/"><b>Live site</b></a> · <a href="https://github.com/WanjikuK60/Solstice-Kiosk">Code</a></sub>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center">
-<a href="https://wanjikuk60.github.io/quicknotes-app/"><img src="assets/projects/quicknotes.svg" alt="QuickNotes" width="100%"/></a><br/>
-<sub><a href="https://wanjikuk60.github.io/quicknotes-app/"><b>Live site</b></a> · <a href="https://github.com/WanjikuK60/quicknotes-app">Code</a></sub>
-</td>
-<td width="50%" align="center">
-<a href="https://wanjikuk60.github.io/Chat-Cartographer/"><img src="assets/projects/chat-cartographer.svg" alt="Chat Cartographer" width="100%"/></a><br/>
-<sub><a href="https://wanjikuk60.github.io/Chat-Cartographer/"><b>Live site</b></a> · <a href="https://github.com/WanjikuK60/Chat-Cartographer">Code</a></sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://wanjikuk60.github.io/AZ-900-Study-Buddy/"><img src="assets/projects/az900.svg" alt="AZ-900 Study Buddy: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/savannah-loan-system/"><img src="assets/projects/savannah.svg" alt="Savannah Loan System: live site" width="49%"/></a>
+</p>
+<p align="center">
+  <a href="https://wanjikuk60.github.io/Kiroween/"><img src="assets/projects/kiroween.svg" alt="The Haunted Portfolio: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/northstar-day1-webhook/"><img src="assets/projects/northstar.svg" alt="NorthStar Webhook: live site" width="49%"/></a>
+</p>
+<p align="center">
+  <a href="https://wanjikuk60.github.io/quicknotes-system-design/"><img src="assets/projects/system-design.svg" alt="QuickNotes System Design: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/Solstice-Kiosk/"><img src="assets/projects/solstice.svg" alt="Solstice Kiosk: live site" width="49%"/></a>
+</p>
+<p align="center">
+  <a href="https://wanjikuk60.github.io/quicknotes-app/"><img src="assets/projects/quicknotes.svg" alt="QuickNotes: live site" width="49%"/></a>
+  <a href="https://wanjikuk60.github.io/Chat-Cartographer/"><img src="assets/projects/chat-cartographer.svg" alt="Chat Cartographer: live site" width="49%"/></a>
+</p>
+
+<p align="center"><sub>Click a card to open its live site · Source code: <a href="https://github.com/WanjikuK60/AZ-900-Study-Buddy">AZ-900 Study Buddy</a> · <a href="https://github.com/WanjikuK60/savannah-loan-system">Savannah Loan System</a> · <a href="https://github.com/WanjikuK60/Kiroween">The Haunted Portfolio</a> · <a href="https://github.com/WanjikuK60/northstar-day1-webhook">NorthStar Webhook</a> · <a href="https://github.com/WanjikuK60/quicknotes-system-design">QuickNotes System Design</a> · <a href="https://github.com/WanjikuK60/Solstice-Kiosk">Solstice Kiosk</a> · <a href="https://github.com/WanjikuK60/quicknotes-app">QuickNotes</a> · <a href="https://github.com/WanjikuK60/Chat-Cartographer">Chat Cartographer</a></sub></p>
 
 <p align="center">
   <img src="assets/divider-stack.svg" alt="Tech stack" width="100%"/>
 </p>
 
 <p align="center">
-  <img src="assets/stack.svg" alt="Tools I build with: Python, JavaScript, TypeScript, SQL, HTML, CSS; FastAPI, Pydantic, pytest, PostgreSQL, Prisma, REST APIs; React, TanStack, Tailwind CSS, accessibility; Azure (AZ-900), GitHub Actions, GitHub Pages, Render, Gemini API, Git" width="100%"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
+  <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white" alt="Pydantic"/>
+  <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+  <img src="https://img.shields.io/badge/Azure_(AZ--900)-0078D4?style=for-the-badge" alt="Microsoft Azure"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
+  <img src="https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white" alt="GitHub Pages"/>
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" alt="Render"/>
+  <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Google Gemini"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
 </p>
 
 <p align="center">
@@ -76,7 +75,11 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=WanjikuK60&hide_border=true&background=30,1E0B3B,C2396D&ring=FF7A59&fire=FFD27A&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFD27A&sideLabels=FFD9C2&dates=FFD9C2&stroke=FFFFFF33" alt="GitHub contribution streak" width="70%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=WanjikuK60&bg_color=1e0b3b&color=ffd9c2&line=ff7a59&point=ffd27a&area=true&area_color=c2396d&title_color=ffd27a&hide_border=true&radius=18&custom_title=My%20contributions%20over%20time" alt="Contribution activity graph" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=WanjikuK60&hide_border=true&border_radius=18&background=30,1E0B3B,C2396D&ring=FF7A59&fire=FFD27A&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFD27A&sideLabels=FFD9C2&dates=FFD9C2&stroke=FFFFFF33" alt="GitHub contribution streak" width="70%"/>
 </p>
 
 <p align="center">
@@ -84,6 +87,10 @@
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WanjikuK60/WanjikuK60/output/sunset-snake-dark.svg"/>
     <img src="https://raw.githubusercontent.com/WanjikuK60/WanjikuK60/output/sunset-snake.svg" alt="A snake eating my GitHub contribution graph" width="100%"/>
   </picture>
+</p>
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&border=false" alt="A random dev quote"/>
 </p>
 
 <p align="center">
