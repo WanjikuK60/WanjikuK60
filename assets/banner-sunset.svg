@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-labelledby="title desc">
   <title id="title">Wanjiku Kamande</title>
-  <desc id="desc">Animated Nairobi sunset: giraffes and acacia trees on the savannah in front of the city skyline, with the sun setting, birds flying, and a typing tagline.</desc>
+  <desc id="desc">Hello! I'm Wanjiku Kamande, an aspiring Software Engineer: dreaming big, coding bold. Animated Nairobi sunset: giraffes and acacia trees on the savannah in front of the city skyline, with the sun setting, birds flying, and a typing tagline.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#160733">
@@ -104,9 +104,9 @@
         .k1 { transform: scaleX(1); }
       }
     </style>
-    <clipPath id="type1"><rect class="type k1" x="94" y="252" width="440" height="34"/></clipPath>
-    <clipPath id="type2"><rect class="type k2" x="94" y="252" width="440" height="34"/></clipPath>
-    <clipPath id="type3"><rect class="type k3" x="94" y="252" width="440" height="34"/></clipPath>
+    <clipPath id="type1"><rect class="type k1" x="94" y="252" width="500" height="34"/></clipPath>
+    <clipPath id="type2"><rect class="type k2" x="94" y="252" width="500" height="34"/></clipPath>
+    <clipPath id="type3"><rect class="type k3" x="94" y="252" width="500" height="34"/></clipPath>
   </defs>
 
   <g clip-path="url(#frame)">
@@ -167,16 +167,16 @@
       <g class="bird b3"><path class="wing" d="M0 32 Q 6 26 12 32 Q 18 26 24 32"/></g>
     </g>
 
-    <text class="in" x="72" y="96" font-size="22" font-weight="700" fill="#ffd9c2" letter-spacing="3">HABARI! I'M</text>
+    <text class="in" x="72" y="96" font-size="22" font-weight="700" fill="#ffd9c2" letter-spacing="3">HELLO! I'M</text>
     <text class="in d1" x="68" y="170" font-size="74" font-weight="900" fill="url(#shine)" letter-spacing="-1">Wanjiku Kamande</text>
-    <text class="in d2" x="72" y="214" font-size="21" fill="#ffe9dc">Software Engineering student · building tech for Africa</text>
+    <text class="in d2" x="72" y="214" font-size="21" fill="#ffe9dc">Aspiring Software Engineer · <tspan fill="#ffd27a" font-weight="700">Dreaming big. Coding bold. ✨</tspan></text>
 
     <g class="in d3">
       <text x="72" y="277" font-size="24" font-weight="800" fill="#ffd27a">&gt;</text>
       <g font-size="24" font-weight="700" fill="#ffffff">
-        <text x="94" y="277" clip-path="url(#type1)">Backends with Python &amp; FastAPI<tspan fill="#ffd27a"> _</tspan></text>
-        <text x="94" y="277" clip-path="url(#type2)">Apps that speak Kiswahili<tspan fill="#ffd27a"> _</tspan></text>
-        <text x="94" y="277" clip-path="url(#type3)">Cloud, system design &amp; fair AI<tspan fill="#ffd27a"> _</tspan></text>
+        <text x="94" y="277" clip-path="url(#type1)">Turning bold ideas into real apps<tspan fill="#ffd27a"> _</tspan></text>
+        <text x="94" y="277" clip-path="url(#type2)">Building with Python &amp; FastAPI<tspan fill="#ffd27a"> _</tspan></text>
+        <text x="94" y="277" clip-path="url(#type3)">Code today, lead tech tomorrow<tspan fill="#ffd27a"> _</tspan></text>
       </g>
     </g>
 

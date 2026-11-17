@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Habari! I'm Wanjiku Kamande, an aspiring Software Engineer based in Nairobi, Kenya, building tech for Africa" width="100%"/>
+  <img src="assets/banner-sunset.svg" alt="Hello! I am Wanjiku Kamande, an aspiring Software Engineer based in Nairobi, Kenya. Dreaming big. Coding bold." width="100%"/>
 </p>
 
 <p align="center">
