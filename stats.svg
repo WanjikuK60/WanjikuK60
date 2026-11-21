@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 212" width="440" height="212" role="img" aria-label="GitHub stats: Contributions in the last year 213, Commits in the last year 144, Pull requests 46, Public repositories 12, Stars earned 0">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e0b3b"/>
+      <stop offset="0.6" stop-color="#5b1f6e"/>
+      <stop offset="1" stop-color="#c2396d"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="440" height="212" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="440" height="212" fill="url(#bg)"/>
+    <circle cx="394" cy="40" r="60" fill="#ff7a59" fill-opacity="0.22"/>
+    <circle cx="394" cy="40" r="16" fill="#ffd27a" fill-opacity="0.9"/>
+  </g>
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="24" y="38" font-size="20" font-weight="800" fill="#ffd27a">My GitHub activity</text>
+    <circle cx="30" cy="69" r="5" fill="#ffd27a"/><text x="46" y="74" font-size="15" fill="#ffe9dc">Contributions in the last year</text><text x="412" y="74" font-size="16" font-weight="800" fill="#ffffff" text-anchor="end">213</text><circle cx="30" cy="96" r="5" fill="#ffb26b"/><text x="46" y="101" font-size="15" fill="#ffe9dc">Commits in the last year</text><text x="412" y="101" font-size="16" font-weight="800" fill="#ffffff" text-anchor="end">144</text><circle cx="30" cy="123" r="5" fill="#ff7a59"/><text x="46" y="128" font-size="15" fill="#ffe9dc">Pull requests</text><text x="412" y="128" font-size="16" font-weight="800" fill="#ffffff" text-anchor="end">46</text><circle cx="30" cy="150" r="5" fill="#e8517a"/><text x="46" y="155" font-size="15" fill="#ffe9dc">Public repositories</text><text x="412" y="155" font-size="16" font-weight="800" fill="#ffffff" text-anchor="end">12</text><circle cx="30" cy="177" r="5" fill="#c2396d"/><text x="46" y="182" font-size="15" fill="#ffe9dc">Stars earned</text><text x="412" y="182" font-size="16" font-weight="800" fill="#ffffff" text-anchor="end">0</text>
+  </g>
+</svg>
