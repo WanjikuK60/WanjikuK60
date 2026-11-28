@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 212" width="440" height="212" role="img" aria-label="Most used languages: JavaScript 37.2%, TypeScript 24.1%, CSS 16.9%, Python 11.2%, HTML 10.5%, Batchfile 0.1%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e0b3b"/>
+      <stop offset="0.6" stop-color="#5b1f6e"/>
+      <stop offset="1" stop-color="#c2396d"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="440" height="212" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="440" height="212" fill="url(#bg)"/>
+    <circle cx="394" cy="40" r="60" fill="#ff7a59" fill-opacity="0.22"/>
+    <circle cx="394" cy="40" r="16" fill="#ffd27a" fill-opacity="0.9"/>
+  </g>
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="24" y="38" font-size="20" font-weight="800" fill="#ffd27a">Most used languages</text>
+    <clipPath id="bar"><rect x="24" y="58" width="392" height="14" rx="7"/></clipPath>
+    <g clip-path="url(#bar)"><rect x="24.0" y="58" width="145.7" height="14" fill="#ffd27a"/><rect x="169.7" y="58" width="94.3" height="14" fill="#ffb26b"/><rect x="264.1" y="58" width="66.1" height="14" fill="#ff7a59"/><rect x="330.2" y="58" width="44.1" height="14" fill="#e8517a"/><rect x="374.3" y="58" width="41.3" height="14" fill="#c2396d"/><rect x="415.5" y="58" width="2.0" height="14" fill="#8c2f6a"/></g>
+    <circle cx="30" cy="107" r="6" fill="#ffd27a"/><text x="44" y="112" font-size="15" fill="#ffffff">JavaScript</text><text x="200" y="112" font-size="14" fill="#ffd9c2" text-anchor="end">37.2%</text><circle cx="230" cy="107" r="6" fill="#ffb26b"/><text x="244" y="112" font-size="15" fill="#ffffff">TypeScript</text><text x="400" y="112" font-size="14" fill="#ffd9c2" text-anchor="end">24.1%</text><circle cx="30" cy="137" r="6" fill="#ff7a59"/><text x="44" y="142" font-size="15" fill="#ffffff">CSS</text><text x="200" y="142" font-size="14" fill="#ffd9c2" text-anchor="end">16.9%</text><circle cx="230" cy="137" r="6" fill="#e8517a"/><text x="244" y="142" font-size="15" fill="#ffffff">Python</text><text x="400" y="142" font-size="14" fill="#ffd9c2" text-anchor="end">11.2%</text><circle cx="30" cy="167" r="6" fill="#c2396d"/><text x="44" y="172" font-size="15" fill="#ffffff">HTML</text><text x="200" y="172" font-size="14" fill="#ffd9c2" text-anchor="end">10.5%</text><circle cx="230" cy="167" r="6" fill="#8c2f6a"/><text x="244" y="172" font-size="15" fill="#ffffff">Batchfile</text><text x="400" y="172" font-size="14" fill="#ffd9c2" text-anchor="end">0.1%</text>
+  </g>
+</svg>
